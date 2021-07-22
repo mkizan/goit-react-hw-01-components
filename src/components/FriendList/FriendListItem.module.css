@@ -1,0 +1,40 @@
+.item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.status {
+  display: block;
+  margin-right: 10px;
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.status[state='true'] {
+  background-color: #4caf50;
+}
+
+.status[state='false'] {
+  background-color: #f9574b;
+}
+
+.avatar {
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 24px;
+}
